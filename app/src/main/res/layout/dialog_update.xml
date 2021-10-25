@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    android:scrollbars="horizontal">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/edt_todoEdit"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Judul Reservasi"
+                android:padding="16dp" />
+
+            <CheckBox
+                android:id="@+id/PR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Potong Rambut" />
+
+            <CheckBox
+                android:id="@+id/P"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pijat" />
+
+            <CheckBox
+                android:id="@+id/CR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cat Rambut" />
+
+            <CheckBox
+                android:id="@+id/W"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Waxing" />
+
+            <CheckBox
+                android:id="@+id/S"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Smoothing" />
+
+            <CheckBox
+                android:id="@+id/M"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Menikur" />
+
+            <CheckBox
+                android:id="@+id/Pr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Predikur" />
+
+            <CalendarView
+                android:id="@+id/calendarV"
+                android:layout_width="match_parent"
+                android:layout_height="306dp" />
+
+            <TextView
+                android:id="@+id/myDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:visibility="invisible" />
+            <TextView
+                android:id="@+id/ke"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/btnUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Update" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
